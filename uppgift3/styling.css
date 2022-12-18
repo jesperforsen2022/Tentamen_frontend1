@@ -1,13 +1,19 @@
+/* har satt margin till 0 här för att slippa ytterkanten som annars skapas 
+per automatik på hela projektet*/
 body{
     margin:0;
 }
+
+/* använder flex-direction "colum" för att få "grunddelarna på en vågrätt rad */
 .root{
  height: 100vh;
  display: flex;
  flex-direction: column;
 }
 
-
+/* använder "row" på dessa för att dom ska tillsammans bilda rader lodrätt
+och 100% width för att fylla sin "del". samt "flex 4" för att ta upp en liten större del än dom andra
+som har blivit tilldelade "flex: 1 och flex: 0.5 */
 #main{
     display: flex;
     flex-direction: row;
